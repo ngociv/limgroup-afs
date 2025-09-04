@@ -5,13 +5,6 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-left">
-        <div className="logo">
-          <div className="logo-icon">
-            <span>L</span>
-            <span>X</span>
-          </div>
-          <span className="logo-text">LimXAds</span>
-        </div>
         <h1 className="page-title">Click</h1>
       </div>
       

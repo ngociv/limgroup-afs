@@ -38,6 +38,13 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
+      <div className="sidebar-logo">
+        <div className="logo-icon">
+          <span>L</span>
+          <span>X</span>
+        </div>
+        <span className="logo-text">LimXAds</span>
+      </div>
       <div className="sidebar-content">
         {menuItems.map((item, index) => (
           <div 
