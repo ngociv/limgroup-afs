@@ -1,0 +1,12 @@
+fe/build/
+fe/node_modules/
+fe/*.zip
+
+fe-2/build/
+fe-2/node_modules/
+fe-2/*.zip
+
+be/logs/
+be/build/
+be/.gradle
+be/.idea

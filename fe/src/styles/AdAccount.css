@@ -1,0 +1,554 @@
+/* Force dark mode by default */
+body {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+/* CSS Variables for theming */
+:root {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d30;
+  --text-primary-global: #ffffff;
+  --text-secondary-global: #a1a1a6;
+  --border-color: #404040;
+  --card-bg: #2d2d30;
+  --header-bg: #2d2d30;
+  --table-bg: #2d2d30;
+  --table-border: #404040;
+  --table-header-bg: #1a1a1a;
+  --table-row-hover: #404040;
+}
+
+/* Light theme overrides */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --text-primary-global: #1d1d1f;
+  --text-secondary-global: #86868b;
+  --border-color: #e5e7eb;
+  --card-bg: #ffffff;
+  --header-bg: #ffffff;
+  --table-bg: #ffffff;
+  --table-border: #e5e7eb;
+  --table-header-bg: #f9fafb;
+  --table-row-hover: #f9fafb;
+}
+
+[data-theme="light"] body {
+  background-color: #ffffff !important;
+  color: #1d1d1f !important;
+}
+
+/* Ad Account Page Specific Styles */
+.ad-account-page {
+  background-color: #1a1a1a !important;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme="light"] .ad-account-page {
+  background-color: #ffffff !important;
+}
+
+/* Top Header Bar */
+.top-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #2d2d30 !important;
+  border-bottom: 1px solid #404040 !important;
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] .top-header-bar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+[data-theme="light"] .header-left h1 {
+  color: #1d1d1f !important;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-dropdowns {
+  display: flex;
+  gap: 12px;
+}
+
+.header-dropdown {
+  padding: 8px 12px;
+  border: 1px solid #404040 !important;
+  border-radius: 6px;
+  background-color: #2d2d30 !important;
+  font-size: 14px;
+  color: #ffffff !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] .header-dropdown {
+  border: 1px solid #e0e0e0 !important;
+  background-color: #ffffff !important;
+  color: #1d1d1f !important;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2d2d30 !important;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  color: #ffffff !important;
+}
+
+[data-theme="light"] .header-icon-btn {
+  background-color: #f5f5f7 !important;
+  color: #1d1d1f !important;
+}
+
+.header-icon-btn:hover {
+  background-color: #404040 !important;
+}
+
+[data-theme="light"] .header-icon-btn:hover {
+  background-color: #e0e0e0 !important;
+}
+
+.header-avatar-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007aff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Content Header */
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px 16px;
+  background-color: #2d2d30 !important;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme="light"] .content-header {
+  background-color: #ffffff !important;
+}
+
+.content-header-left h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+[data-theme="light"] .content-header-left h2 {
+  color: #1d1d1f !important;
+}
+
+.content-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px 40px 10px 16px;
+  border: 1px solid #404040 !important;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #2d2d30 !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] .search-input {
+  border: 1px solid #e0e0e0 !important;
+  background-color: #ffffff !important;
+  color: #1d1d1f !important;
+}
+
+.search-input::placeholder {
+  color: #a1a1a6 !important;
+}
+
+[data-theme="light"] .search-input::placeholder {
+  color: #86868b !important;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  color: #a1a1a6 !important;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+[data-theme="light"] .search-icon {
+  color: #86868b !important;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid #404040 !important;
+  border-radius: 6px;
+  background-color: #2d2d30 !important;
+  color: #ffffff !important;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[data-theme="light"] .action-btn {
+  border: 1px solid #e0e0e0 !important;
+  background-color: #ffffff !important;
+  color: #1d1d1f !important;
+}
+
+.action-btn:hover {
+  background-color: #404040 !important;
+  border-color: #404040 !important;
+}
+
+[data-theme="light"] .action-btn:hover {
+  background-color: #f5f5f7 !important;
+  border-color: #d0d0d0 !important;
+}
+
+/* Accounts Table */
+.accounts-table-container {
+  padding: 0 32px 32px;
+  background-color: #1a1a1a !important;
+  transition: background-color 0.3s ease;
+  overflow-x: auto; /* Add horizontal scroll if needed */
+  min-width: 1000px; /* Ensure minimum width for all columns */
+}
+
+[data-theme="light"] .accounts-table-container {
+  background-color: #ffffff !important;
+}
+
+.accounts-table {
+  width: 100%;
+  min-width: 1000px; /* Ensure table is at least as wide as all columns combined */
+  border-collapse: collapse;
+  background-color: #2d2d30 !important;
+  transition: background-color 0.3s ease;
+  table-layout: fixed !important;
+  /* Force total width calculation */
+  table-layout: fixed !important;
+  width: 1000px !important;
+}
+
+[data-theme="light"] .accounts-table {
+  background-color: #ffffff !important;
+}
+
+.accounts-table th {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #404040 !important;
+  transition: all 0.3s ease;
+}
+
+[data-theme="light"] .accounts-table th {
+  background-color: #f8f9fa !important;
+  color: #1d1d1f !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+
+/* Column widths - Force with !important */
+.accounts-table th:nth-child(1) { width: 80px !important; }  /* ID */
+.accounts-table th:nth-child(2) { width: 300px !important; } /* Ad account */
+.accounts-table th:nth-child(3) { width: 300px !important; } /* Advertiser */
+.accounts-table th:nth-child(4) { width: 200px !important; } /* Start crawling from */
+.accounts-table th:nth-child(5) { width: 120px !important; } /* Actions */
+
+/* Force table cells to respect column widths - Force with !important */
+.accounts-table td:nth-child(1) { width: 80px !important; max-width: 80px !important; }  /* ID */
+.accounts-table td:nth-child(2) { width: 300px !important; max-width: 300px !important; } /* Ad account */
+.accounts-table td:nth-child(3) { width: 300px !important; max-width: 300px !important; } /* Advertiser */
+.accounts-table td:nth-child(4) { width: 200px !important; max-width: 200px !important; } /* Start crawling from */
+.accounts-table td:nth-child(5) { width: 120px !important; max-width: 120px !important; } /* Actions */
+
+.accounts-table td {
+  padding: 16px;
+  border-bottom: 1px solid #404040 !important;
+  vertical-align: middle;
+  transition: border-color 0.3s ease;
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  /* Force width to prevent overlap */
+  min-width: 0;
+  max-width: none;
+}
+
+[data-theme="light"] .accounts-table td {
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+.accounts-table tbody tr:hover {
+  background-color: #404040 !important;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme="light"] .accounts-table tbody tr:hover {
+  background-color: #f8f9fa !important;
+}
+
+/* Account Info */
+.account-info, .advertiser-info {
+  display: flex;
+  align-items: center;
+}
+
+.account-details, .advertiser-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.facebook-icon {
+  font-size: 20px;
+  color: #1877f2;
+}
+
+.advertiser-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #2d2d30 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme="light"] .advertiser-avatar {
+  background-color: #f0f0f0 !important;
+}
+
+.account-text, .advertiser-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-name, .advertiser-name {
+  font-weight: 500;
+  color: #ffffff !important;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+[data-theme="light"] .account-name,
+[data-theme="light"] .advertiser-name {
+  color: #1d1d1f !important;
+}
+
+.account-id, .advertiser-email {
+  color: #a1a1a6 !important;
+  font-size: 12px;
+  margin-top: 2px;
+  transition: color 0.3s ease;
+}
+
+[data-theme="light"] .account-id,
+[data-theme="light"] .advertiser-email {
+  color: #86868b !important;
+}
+
+/* Account Actions */
+.account-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.status-toggle.active {
+  background-color: #34c759;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.status-toggle.active .toggle-slider {
+  transform: translateX(20px);
+}
+
+.edit-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: #2d2d30 !important;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  color: #ffffff !important;
+}
+
+[data-theme="light"] .edit-btn {
+  background-color: #f5f5f7 !important;
+  color: #1d1d1f !important;
+}
+
+.edit-btn:hover {
+  background-color: #404040 !important;
+}
+
+[data-theme="light"] .edit-btn:hover {
+  background-color: #e0e0e0 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-header-bar {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .header-dropdowns {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .content-header {
+    padding: 20px 20px 16px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .content-header-right {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .accounts-table-container {
+    padding: 0 20px 20px;
+  }
+  
+  /* Responsive table */
+  .accounts-table {
+    table-layout: auto;
+    min-width: auto;
+  }
+  
+  .accounts-table th:nth-child(1),
+  .accounts-table th:nth-child(2),
+  .accounts-table th:nth-child(3),
+  .accounts-table th:nth-child(4),
+  .accounts-table th:nth-child(5) {
+    width: auto;
+  }
+  
+  .accounts-table td:nth-child(1),
+  .accounts-table td:nth-child(2),
+  .accounts-table td:nth-child(3),
+  .accounts-table td:nth-child(4),
+  .accounts-table td:nth-child(5) {
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-header-bar {
+    padding: 16px 16px;
+  }
+  
+  .content-header {
+    padding: 16px 16px 16px;
+  }
+  
+  .accounts-table-container {
+    padding: 0 16px 16px;
+  }
+}
