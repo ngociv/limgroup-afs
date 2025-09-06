@@ -1,7 +1,7 @@
 import React from 'react';
 import { Search, Download, Filter, Settings } from 'lucide-react';
 
-const MainContent = () => {
+const Ads = () => {
   const dateFilters = [
     'Today', 'Yesterday', 'Last 7 Days', 'This Month', 
     'Last Month', 'This Quarter', 'All Time', 'Custom'
@@ -35,7 +35,7 @@ const MainContent = () => {
       <div className="content-card">
         <div className="card-header">
           <div className="card-title">
-            <h2>0 Clicks</h2>
+            <h2>0 Ads</h2>
           </div>
           
           <div className="search-section">
@@ -43,7 +43,7 @@ const MainContent = () => {
               <Search size={16} />
               <input 
                 type="text" 
-                placeholder="Search clicks by landing page"
+                placeholder="Search ads"
                 className="search-input"
               />
             </div>
@@ -56,8 +56,8 @@ const MainContent = () => {
         
         <div className="card-content">
           <div className="no-data">
-            <h3>No rpc found</h3>
-            <p>Try these related keywords instead.</p>
+            <h3>No ads found</h3>
+            <p>Create your first ad to reach your audience.</p>
           </div>
         </div>
       </div>
@@ -65,4 +65,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default Ads;

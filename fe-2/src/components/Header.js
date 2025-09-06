@@ -1,11 +1,11 @@
 import React from 'react';
 import { Bell, ChevronDown } from 'lucide-react';
 
-const Header = () => {
+const Header = ({ activePage }) => {
   return (
     <div className="header">
       <div className="header-left">
-        <h1 className="page-title">Click</h1>
+        <h1 className="page-title">{activePage}</h1>
       </div>
       
       <div className="header-right">
