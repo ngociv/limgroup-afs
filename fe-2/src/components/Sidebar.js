@@ -47,14 +47,14 @@ const Sidebar = ({ activePage, setActivePage }) => {
     { icon: Megaphone, label: 'Campaign', active: activePage === 'Campaign' },
     { icon: Bookmark, label: 'Ads', active: activePage === 'Ads' },
     { icon: Sliders, label: 'Rule', active: activePage === 'Rule' },
-    { icon: Key, label: 'Keyword', active: activePage === 'Keyword', hasDropdown: true },
-    { icon: Menu, label: 'Niche', active: activePage === 'Niche', hasDropdown: true },
+    { icon: Key, label: 'Keyword', active: activePage === 'Keyword'},
+    { icon: Menu, label: 'Niche', active: activePage === 'Niche'},
     { icon: Square, label: 'Pixel', active: activePage === 'Pixel' },
     { icon: Image, label: 'Creative Set', active: activePage === 'Creative Set' },
     { icon: User, label: 'Ad Account', active: activePage === 'Ad Account' },
     { icon: User, label: 'Advertiser', active: activePage === 'Advertiser' },
     { icon: Users, label: 'Team', active: activePage === 'Team' },
-    { icon: Globe, label: 'System', active: activePage === 'System', hasDropdown: true },
+    { icon: Globe, label: 'System', active: activePage === 'System'},
   ];
 
   const handleMenuClick = (label) => {

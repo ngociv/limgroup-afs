@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import Header from './Header';
+import Dashboard from './Dashboard';
 import Click from './Click';
+import Keyword from './Keyword';
+import Niche from './Niche';
+import System from './System';
 import LandingPage from './LandingPage';
 import Campaign from './Campaign';
 import Ads from './Ads';
@@ -13,12 +17,20 @@ import Advertiser from './Advertiser';
 import Team from './Team';
 
 const Layout = () => {
-  const [activePage, setActivePage] = useState('Click');
+  const [activePage, setActivePage] = useState('Dashboard');
 
   const renderActivePage = () => {
     switch (activePage) {
+      case 'Dashboard':
+        return <Dashboard />;
       case 'Click':
         return <Click />;
+      case 'Keyword':
+        return <Keyword />;
+      case 'Niche':
+        return <Niche />;
+      case 'System':
+        return <System />;
       case 'Landing Page':
         return <LandingPage />;
       case 'Campaign':
@@ -38,7 +50,7 @@ const Layout = () => {
       case 'Team':
         return <Team />;
       default:
-        return <Click />;
+        return <Dashboard />;
     }
   };
 
