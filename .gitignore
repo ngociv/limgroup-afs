@@ -10,3 +10,5 @@ be/logs/
 be/build/
 be/.gradle
 be/.idea
+
+test/
